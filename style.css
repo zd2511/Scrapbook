@@ -1,0 +1,157 @@
+/* Joané se eerste jaar — sagte baba-Minnie / pienk plakboek styl */
+:root {
+  --pink: #f4c6d8;
+  --pink-deep: #d9789f;
+  --pink-light: #fff0f5;
+  --cream: #fffaf5;
+  --ink: #493943;
+  --muted: #927b87;
+  --white: #fff;
+  --shadow: 0 14px 40px rgba(143, 86, 111, .10);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+body {
+  margin: 0; color: var(--ink); background: #fff9fb;
+  font-family: "DM Sans", sans-serif; line-height: 1.65;
+}
+a { color: inherit; }
+button, input { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid #c65f8a; outline-offset: 4px; }
+.hero {
+  min-height: 690px; position: relative; overflow: hidden; text-align: center;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(255,255,255,.85) 0 3px, transparent 4px),
+    radial-gradient(circle at 82% 30%, rgba(255,255,255,.8) 0 4px, transparent 5px),
+    linear-gradient(145deg, #fff0f5 0%, #f8dce8 52%, #f4c6d8 100%);
+  background-size: 52px 52px, 75px 75px, auto;
+}
+.top-nav {
+  max-width: 1160px; margin: auto; padding: 22px 28px; display: flex;
+  align-items: center; justify-content: space-between; position: relative; z-index: 5;
+}
+.brand { text-decoration: none; font-weight: 700; letter-spacing: -.03em; }
+.mini-bow { color: var(--pink-deep); font-size: 25px; vertical-align: -2px; margin-right: 6px; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { text-decoration: none; font-size: .9rem; color: #765967; }
+.nav-links a:hover { color: #b34d78; }
+.menu-toggle { display: none; border: 0; background: transparent; color: var(--ink); font-size: 1.5rem; }
+.hero-content { position: relative; z-index: 2; padding: 58px 20px 70px; }
+.mouse-mark { width: 105px; height: 95px; margin: 0 auto 22px; position: relative; }
+.mouse-head { position: absolute; width: 62px; height: 62px; border-radius: 50%; background: #fff; left: 21px; bottom: 0; box-shadow: 0 8px 22px #c887a455; }
+.ear { position: absolute; width: 40px; height: 40px; border-radius: 50%; background: #fff; top: 0; }
+.ear-left { left: 5px; } .ear-right { right: 5px; }
+.bow { position: absolute; z-index: 2; top: 3px; left: 38px; width: 43px; height: 30px; }
+.bow i { position: absolute; top: 4px; width: 22px; height: 21px; background: #df78a0; border: 2px solid #c85e89; }
+.bow i:first-child { left: 0; border-radius: 80% 25% 65% 30%; transform: rotate(20deg); }
+.bow i:nth-child(2) { right: 0; border-radius: 25% 80% 30% 65%; transform: rotate(-20deg); }
+.bow b { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #c85e89; left: 16px; top: 10px; }
+.eyebrow, .tiny-label { text-transform: uppercase; letter-spacing: .2em; font-size: .7rem; font-weight: 700; color: #b45e83; }
+h1, h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 600; line-height: 1.08; }
+h1 { font-size: clamp(4rem, 9vw, 7.4rem); margin: 12px 0 0; letter-spacing: -.06em; }
+h1 em, h2 em { color: #c7638e; font-weight: 500; }
+.hero-name { margin: 8px 0 14px; font-family: "Playfair Display", Georgia, serif; font-size: 1.55rem; letter-spacing: .12em; }
+.hero-note { color: #765967; font-size: .98rem; }
+.primary-button {
+  display: inline-block; margin-top: 18px; padding: 13px 25px; border-radius: 999px;
+  color: #fff; background: #c96891; text-decoration: none; font-size: .88rem;
+  box-shadow: 0 8px 20px #c9689140; transition: transform .2s, background .2s;
+}
+.primary-button:hover { transform: translateY(-3px); background: #b6537e; }
+.hero-date { margin-top: 27px; font-size: .75rem; color: #8c6478; letter-spacing: .08em; }
+.hero-date span { margin: 0 8px; color: #c7638e; }
+.hero-sparkle { position: absolute; color: #fff; font-size: 2rem; }
+.sparkle-one { top: 32%; left: 12%; } .sparkle-two { right: 13%; top: 43%; font-size: 2.7rem; }
+.sparkle-three { bottom: 13%; left: 23%; }
+main { overflow: hidden; }
+.paper-card {
+  max-width: 760px; margin: -35px auto 70px; position: relative; z-index: 3;
+  padding: 42px 50px; text-align: center; background: #fff; border: 1px solid #f8e5ec;
+  border-radius: 9px; box-shadow: var(--shadow); transform: rotate(-.5deg);
+}
+.paper-card h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 9px 0 12px; }
+.paper-card p { max-width: 570px; margin: auto; color: var(--muted); }
+.signature { margin-top: 18px; color: #a16d84; font-family: "Playfair Display", serif; font-style: italic; }
+.signature strong { color: #c7638e; }
+.section { max-width: 1160px; margin: 0 auto; padding: 35px 28px 90px; }
+.section-heading { text-align: center; max-width: 700px; margin: 0 auto 38px; }
+.section-heading h2 { font-size: clamp(2.3rem, 5vw, 3.7rem); margin: 8px 0 12px; }
+.section-heading > p:last-child { color: var(--muted); margin: 0; }
+.special-section { padding-top: 15px; }
+.special-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.special-card, .month-card, .week-card {
+  background: #fff; border: 1px solid #f3e2e9; box-shadow: 0 9px 25px #9b627410;
+  border-radius: 12px; overflow: hidden;
+}
+.special-card { padding: 12px 12px 17px; text-align: center; transform: rotate(var(--tilt, 0deg)); }
+.special-card:nth-child(even) { --tilt: 1deg; }
+.special-card:nth-child(odd) { --tilt: -1deg; }
+.photo-button { display: block; width: 100%; border: 0; padding: 0; background: transparent; cursor: zoom-in; }
+.photo-button img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.special-card .photo-button { aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #fff0f5; }
+.special-card h3 { margin: 13px 0 2px; font-family: "Playfair Display", serif; font-size: 1.1rem; }
+.special-card p { margin: 0; color: var(--muted); font-size: .78rem; }
+.months-section { max-width: none; background: #fff0f5; padding-top: 85px; }
+.months-section .section-heading, .months-section .month-grid { max-width: 1104px; margin-left: auto; margin-right: auto; }
+.month-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.month-card { padding: 13px; }
+.month-title { display: flex; justify-content: space-between; align-items: baseline; padding: 5px 5px 12px; }
+.month-title h3 { margin: 0; font-family: "Playfair Display", serif; font-size: 1.3rem; }
+.month-title span { color: #b97994; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
+.month-photos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; }
+.month-photos .photo-button { aspect-ratio: 1 / 1; border-radius: 6px; overflow: hidden; background: #fff0f5; }
+.month-photos .photo-button:first-child { grid-column: span 2; aspect-ratio: 2 / 1; }
+.week-toolbar { display: flex; align-items: center; gap: 12px; max-width: 650px; margin: 0 auto 25px; }
+.week-toolbar label { font-size: .82rem; font-weight: 700; white-space: nowrap; }
+.week-toolbar input { min-width: 0; flex: 1; border: 1px solid #ecd5df; background: white; padding: 11px 14px; border-radius: 999px; color: var(--ink); }
+.week-toolbar span { color: var(--muted); font-size: .75rem; white-space: nowrap; }
+.week-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.week-card { padding: 9px; }
+.week-card .photo-button { aspect-ratio: 1 / 1; overflow: hidden; border-radius: 7px; background: #fff0f5; }
+.week-card h3 { margin: 9px 2px 0; font-size: .88rem; }
+.week-card p { margin: 0 2px 3px; font-size: .7rem; color: var(--muted); }
+.empty-message { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 35px; }
+.closing-note {
+  text-align: center; padding: 95px 20px 100px;
+  background: linear-gradient(145deg, #f8dce8, #fff0f5);
+}
+.closing-bow { color: #c7638e; font-size: 3rem; }
+.closing-note h2 { font-size: clamp(2.7rem, 6vw, 4.5rem); margin: 8px 0 15px; }
+.closing-note > p:not(.eyebrow) { color: #806674; }
+.closing-signature { display: block; margin-top: 22px; font-family: "Playfair Display", serif; font-style: italic; color: #bd5c86; font-size: 1.2rem; }
+footer { display: flex; justify-content: space-between; gap: 12px; padding: 22px max(28px, calc((100% - 1100px)/2)); color: #997d8b; background: #fff; font-size: .72rem; }
+.lightbox { display: none; position: fixed; inset: 0; z-index: 20; background: rgba(39, 24, 33, .92); align-items: center; justify-content: center; padding: 55px 65px; }
+.lightbox.open { display: flex; }
+.lightbox figure { margin: 0; max-width: min(900px, 80vw); max-height: 85vh; text-align: center; }
+.lightbox img { max-width: 100%; max-height: 76vh; object-fit: contain; border-radius: 8px; }
+.lightbox figcaption { color: #fff; margin-top: 12px; }
+.lightbox button { position: absolute; border: 0; background: transparent; color: #fff; cursor: pointer; }
+.lightbox-close { top: 17px; right: 25px; font-size: 2.5rem; }
+.lightbox-prev, .lightbox-next { top: 50%; font-size: 3rem; transform: translateY(-50%); }
+.lightbox-prev { left: 20px; } .lightbox-next { right: 20px; }
+.floating-hearts { position: fixed; top: 46%; left: -5px; z-index: -1; color: #f3dce5; font-size: 1.8rem; transform: rotate(-90deg); }
+@media (max-width: 850px) {
+  .special-grid { grid-template-columns: repeat(2, 1fr); }
+  .month-grid { grid-template-columns: repeat(2, 1fr); }
+  .week-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .hero { min-height: 650px; }
+  .top-nav { padding: 17px 20px; }
+  .menu-toggle { display: block; }
+  .nav-links { display: none; position: absolute; top: 62px; left: 16px; right: 16px; padding: 18px; border-radius: 12px; background: #fff; box-shadow: var(--shadow); flex-direction: column; gap: 15px; text-align: left; }
+  .nav-links.open { display: flex; }
+  .hero-content { padding-top: 65px; }
+  .paper-card { margin: -25px 17px 55px; padding: 32px 22px; }
+  .section { padding: 25px 17px 65px; }
+  .special-grid { gap: 13px; }
+  .month-grid { grid-template-columns: 1fr; gap: 17px; }
+  .week-grid { grid-template-columns: repeat(2, 1fr); gap: 11px; }
+  .week-toolbar { flex-wrap: wrap; }
+  .week-toolbar input { flex-basis: 100%; order: 3; }
+  .week-toolbar span { margin-left: auto; }
+  footer { flex-direction: column; text-align: center; }
+  .lightbox { padding: 55px 40px; }
+  .lightbox figure { max-width: 90vw; }
+  .lightbox-prev { left: 5px; } .lightbox-next { right: 5px; }
+}

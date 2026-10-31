@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8dce8">
+  <meta name="description" content="Joané se eerste jaar — 'n klein digitale plakboek vol liefde, herinneringe en spesiale mensies.">
+  <title>Joané se Eerste Jaar ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">♡　·　♡　　·　♡</div>
+
+  <header class="hero" id="begin">
+    <nav class="top-nav" aria-label="Hoofdnavigasie">
+      <a class="brand" href="#begin"><span class="mini-bow">♡</span> Joané se plakboek</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Maak navigasie oop" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#spesiale-mensies">Spesiale mensies</a>
+        <a href="#maande">My maande</a>
+        <a href="#weke">52 weke</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="mouse-mark" aria-hidden="true">
+        <span class="ear ear-left"></span><span class="ear ear-right"></span>
+        <span class="mouse-head"></span><span class="bow"><i></i><i></i><b></b></span>
+      </div>
+      <p class="eyebrow">’n Jaar vol klein wonderwerke</p>
+      <h1>My eerste<br><em>jaar</em></h1>
+      <p class="hero-name">Joané Mari</p>
+      <p class="hero-note">Van my eerste asemteug tot my eerste verjaarsdag —<br>elke oomblik, elke glimlag, elke stukkie liefde.</p>
+      <a class="primary-button" href="#spesiale-mensies">Kom kyk saam ♡</a>
+      <div class="hero-date">13 November 2025 <span>✦</span> 13 November 2026</div>
+    </div>
+    <span class="hero-sparkle sparkle-one">✧</span>
+    <span class="hero-sparkle sparkle-two">♡</span>
+    <span class="hero-sparkle sparkle-three">✦</span>
+  </header>
+
+  <main>
+    <section class="intro paper-card">
+      <span class="tiny-label">Liewe familie</span>
+      <h2>’n Klein kykie in my wêreld</h2>
+      <p>Hierdie is my eerste jaar, vasgevang in foto’s en herinneringe. Dankie dat julle deel is van my storie en my wêreld so spesiaal maak.</p>
+      <div class="signature">Met baie liefde, <strong>Joané ♡</strong></div>
+    </section>
+
+    <section class="section special-section" id="spesiale-mensies">
+      <div class="section-heading">
+        <p class="eyebrow">My mense, my hart</p>
+        <h2>Spesiale Mensies <em>in My Lewe</em></h2>
+        <p>Die mense wat my wêreld met liefde, drukkies en mooi herinneringe vul.</p>
+      </div>
+      <div class="special-grid" id="specialGrid"></div>
+    </section>
+
+    <section class="section months-section" id="maande">
+      <div class="section-heading">
+        <p class="eyebrow">Van klein babatjie tot eenjarige prinsessie</p>
+        <h2>My eerste <em>12 maande</em></h2>
+        <p>Ses klein oomblikke uit elke maand — twaalf hoofstukke van groei en liefde.</p>
+      </div>
+      <div class="month-grid" id="monthGrid"></div>
+    </section>
+
+    <section class="section weeks-section" id="weke">
+      <div class="section-heading">
+        <p class="eyebrow">52 weke van liefde</p>
+        <h2>Een foto, <em>elke week</em></h2>
+        <p>Van Week 1 tot Week 52. Kyk hoe vinnig my klein mensie grootgeword het!</p>
+      </div>
+      <div class="week-toolbar">
+        <label for="weekSearch">Soek ’n week</label>
+        <input id="weekSearch" type="search" placeholder="Tik byvoorbeeld 12 of Week 12…" autocomplete="off">
+        <span id="weekCount" aria-live="polite">52 weke</span>
+      </div>
+      <div class="week-grid" id="weekGrid"></div>
+    </section>
+
+    <section class="closing-note">
+      <div class="closing-bow">♡</div>
+      <p class="eyebrow">En dit is maar net die begin…</p>
+      <h2>My storie is nog<br><em>besig om te blom.</em></h2>
+      <p>Dankie dat julle my eerste jaar saam met my vier.</p>
+      <span class="closing-signature">Joané Mari ♡</span>
+    </section>
+  </main>
+
+  <footer>
+    <span>Met liefde gemaak vir Joané</span>
+    <span>♡ 13.11.2025 — 13.11.2026 ♡</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Foto groter vertoon">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Maak foto toe">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Vorige foto">‹</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Volgende foto">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
